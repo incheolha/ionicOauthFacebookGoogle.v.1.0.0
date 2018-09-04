@@ -1,0 +1,7 @@
+{
+  "name": "googleNative",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
