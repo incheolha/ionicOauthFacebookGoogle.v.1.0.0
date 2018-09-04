@@ -12,14 +12,15 @@
   </ion-header>
 
   <ion-content padding>
-    <!-- <ion-card *ngIf="userData">
+    <ion-card *ngIf="currentUserData">
       <ion-card-header>
-        {{ userData.id }} {{ userData.userName }}
+        {{ currentUserData.uid }} {{ currentUserData.userName }}
       </ion-card-header>
-      <img [src]="userData.picture">
+      <img [src]="currentUserData.userPhotoUrl">
       <ion-card-content>
-        <p>Email: {{ userData.email }}</p>
+        <p>Email: {{ currentUserData.userEmail }}</p>
       </ion-card-content>
-    </ion-card> -->
+    </ion-card>
+
 
   </ion-content>

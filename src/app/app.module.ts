@@ -9,11 +9,12 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from './../pages/login/login';
 import { GooglePlus } from '@ionic-native/google-plus';
 import { AngularFireModule } from 'angularfire2';
+
 import firebase from 'firebase';
 
 import { SocialLoginServiceProvider } from '../providers/login-service/login-service';
-
 import { Facebook } from '@ionic-native/facebook';
+
 const googleFirebaseConfig = {
                   apiKey: "AIzaSyBtwh1PFpPTT40ZeECuHGv-FEn9EaQ8X-w",
                   authDomain: "test-244b1.firebaseapp.com",

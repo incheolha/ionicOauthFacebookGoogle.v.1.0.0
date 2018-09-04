@@ -5,7 +5,6 @@ import { LoginPage } from './../login/login';
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SocialLoginServiceProvider } from './../../providers/login-service/login-service';
-import { Subscription } from 'rxjs/Subscription';
 
 
 @Component({
@@ -21,23 +20,8 @@ export class HomePage implements OnInit {
               private socialLoginService: SocialLoginServiceProvider) { }
 
   checkLoginType: boolean;
-  loginSubscription: Subscription;
 
   ngOnInit() {
-                // this.facebookService.getUserProfile().then( profile => {
-                //   console.log('user profile:', profile);
-                //   this.userData = {
-                //                     userId: profile['id'],
-                //                     userName: profile['name'],
-                //                     email: profile['email'],
-                //                     picture: profile['picture_large']['data']['url']
-                //                   }
-                // })
-
-    this.socialLoginService.checkLogintype.subscribe( (typeStatus: boolean) => {
-          this.checkLoginType = typeStatus;
-          console.log('이번 로그인 형태는 ', this.checkLoginType);
-    })
 
     this.currentUserData = this.navParams.data.userData;
     console.log(this.currentUserData);
