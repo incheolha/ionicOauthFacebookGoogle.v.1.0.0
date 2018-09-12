@@ -51,7 +51,7 @@ export class SocialLoginServiceProvider {
   }
 
   facebookGetUserProfile() {
-          return this.facebook.api('me?fields=id,name,email, picture.width(720).height(720).as(picture_large)', [])
+          return this.facebook.api('me?fields=id,name,email,picture.width(720).height(720).as(picture_large)', [])
   }
 
 }

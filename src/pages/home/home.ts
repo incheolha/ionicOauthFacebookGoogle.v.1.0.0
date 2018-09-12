@@ -34,11 +34,11 @@ export class HomePage implements OnInit {
 
   logOut() {
 
-      if (this.currentUserData.loginType === '2') {
+      if (this.currentUserData.loginType === 'facebook') {
         this.socialLoginService.facebookLogout().then( () => {
           this.navCtrl.setRoot(LoginPage);
         })
-      } else if (this.currentUserData.loginType === '3') {
+      } else if (this.currentUserData.loginType === 'google') {
         this.socialLoginService.googleLogOut().then( () => {
           this.navCtrl.setRoot(LoginPage);
         })

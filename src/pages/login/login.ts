@@ -16,9 +16,9 @@ import { UserData } from '../../providers/login-service/userData.model';
 export class LoginPage {
 
   userData: UserData;
-  nodeServerLogin = "1";
-  facebookLogin = "2";
-  googleLogin = "3";
+  nodeServerLogin = "node";
+  facebookLogin = "facebook";
+  googleLogin = "google";
 
   constructor(public navCtrl: NavController,
               private socialLoginService: SocialLoginServiceProvider ) {}
